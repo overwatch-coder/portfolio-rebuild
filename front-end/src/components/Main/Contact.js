@@ -7,7 +7,7 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const { REACT_APP_MAIL_API: url } = process.env;
+    const { REACT_APP_MAIL_API } = process.env;
     const [messageSent, setMessageSent] = useState(false);
 
     const handleSubmission = (event) => {
@@ -19,7 +19,7 @@ const Contact = () => {
             message
         }
 
-        axios.post(`${url}/send`, data)
+        axios.post(`${REACT_APP_MAIL_API}/send`, data)
         .then(data => {
             if(!data) {
                 setMessageSent(false);
