@@ -1,6 +1,7 @@
 import React from 'react';
 import OverwatchPhoto from "../../assets/brainy_cute.jpeg";
 import Typical from "react-typical";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Hero = () => {
     const textToAnimate = [' ', 500, 'Overwatch Coder', 1000, ' ', 500, ' ', 500, 'A Web Developer', 1000];
@@ -24,8 +25,8 @@ const Hero = () => {
             </h4>
             <p className='text-gray-700 font-light md:text-lg'>Front-End Web Developer</p>
             <p className='flex items-center gap-x-4'>
-                <span className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>See my Work</span>
-                <span className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>Hire Me</span>
+                <AnchorLink href='#portfolio' className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>See my Work</AnchorLink>
+                <AnchorLink href='#contact' className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>Hire Me</AnchorLink>
             </p>
         </div>
 
