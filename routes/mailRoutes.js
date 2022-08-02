@@ -32,7 +32,7 @@ router.post('/', (req, res) => {
         if(err) return console.log(err.message);
     })
     
-    res.json({data: "Conntected to backend successfully - " + sentMail})
+    res.json({data: sentMail})
 
 })
 
