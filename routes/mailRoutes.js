@@ -3,7 +3,7 @@ const router = express.Router()
 const nodemailer = require('nodemailer');
 const { MAIL_HOST, MAIL_PORT, MAIL_AUTH_USER, MAIL_AUTH_PASS } = process.env;
 
-router.post('/', (req, res) => {
+router.post('/send', (req, res) => {
     const {fullName, email, subject, message} = req.body;
 
     const transporter = nodemailer.createTransport({

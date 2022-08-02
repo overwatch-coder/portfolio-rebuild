@@ -10,7 +10,7 @@ const path = require('path');
 app.use(express.json())
 app.use(cors())
 
-app.use('/send', mailRoutes);
+app.use('/api', mailRoutes);
 
 // set static files to render front-end
 app.use(express.static(path.join(__dirname, "/front-end/build")));
