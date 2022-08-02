@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router()
 const nodemailer = require('nodemailer');
-const { MAIL_HOST, MAIL_PORT, MAIL_AUTH_USER, MAIL_AUTH_PASS } = process.env;
+const { MAIL_HOST, MAIL_PORT, MAIL_AUTH_USER, MAIL_AUTH_PASS, TO_EMAIL } = process.env;
 
 router.post('/send', (req, res) => {
     const {fullName, email, subject, message} = req.body;
@@ -17,7 +17,9 @@ router.post('/send', (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: "devbrainy@gmail.com",
+        to: TO_EMAIL,
+        cc: TO_EMAIL,
+        bcc: TO_EMAIL,
         subject: subject,  
         html: 
             `<p>New message received:<p>
