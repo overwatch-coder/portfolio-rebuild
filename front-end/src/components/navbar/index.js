@@ -11,7 +11,7 @@ const Index = () => {
     })
 
   return (
-    <div className={`z-[80] overflow-hidden transition duration-1000 ${navFixedClass ? 'fixed' : ''}`}>
+    <div id="index" className={`z-[80] overflow-hidden transition duration-1000 ${navFixedClass ? 'fixed' : ''}`}>
         <div className='z-50 md:hidden'>
             <Mobile />
         </div>
