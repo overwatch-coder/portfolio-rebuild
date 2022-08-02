@@ -1,0 +1,44 @@
+import React from 'react';
+import OverwatchPhoto from "../../assets/brainy_cute.jpeg";
+import Typical from "react-typical";
+
+const Hero = () => {
+    const textToAnimate = [' ', 500, 'Overwatch Coder', 1000, ' ', 500, ' ', 500, 'A Web Developer', 1000];
+
+  return (
+    <div id="home"
+        className='container mx-auto flex flex-col gap-y-3 items-center md:flex-row md:gap-y-0 md:gap-x-5 md:justify-around md:items-center font-[poppins] bg-hero bg-no-repeat bg-cover bg-right md:bg-center bg-fixed py-10'>
+
+        {/* Description Section */}
+        <div className='flex flex-col items-start gap-y-3 md:gap-y-4'>
+            <h2 className='text-sm md:text-base animate-bounce text-cyan-600'>Hey There !</h2>
+            <h4 className='flex items-center gap-x-2 uppercase text-2xl md:text-4xl font-[600]'>
+                <p>I am</p>
+                <p className='text-cyan-600'>
+                    <Typical
+                        steps={textToAnimate}
+                        loop={Infinity}
+                        wrapper="span"
+                    />
+                </p> 
+            </h4>
+            <p className='text-gray-700 font-light md:text-lg'>Front-End Web Developer</p>
+            <p className='flex items-center gap-x-4'>
+                <span className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>See my Work</span>
+                <span className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>Hire Me</span>
+            </p>
+        </div>
+
+        {/* Image Section */}
+        <div className='pt-8 md:pt-0 max-w-[230px] md:max-w-[400px]'>
+            <img 
+                src={OverwatchPhoto} 
+                alt="Overwatch Coder" 
+                className='rounded-full object-contain w-full'
+            />
+        </div>
+    </div>
+  )
+}
+
+export default Hero
