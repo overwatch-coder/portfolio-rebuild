@@ -19,7 +19,7 @@ const Contact = () => {
             message
         }
 
-        axios.post(url, data)
+        axios.post(`${url}/send`, data)
         .then(data => {
             if(!data) {
                 setMessageSent(false);

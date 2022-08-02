@@ -12,10 +12,6 @@ app.use(cors())
 
 app.use('/send', mailRoutes);
 
-app.get('*', (req, res) => {
-    res.redirect('/send')
-})
-
 // set static files to render front-end
 app.use(express.static(path.join(__dirname, "/front-end/build")));
 
