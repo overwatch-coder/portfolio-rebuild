@@ -23,7 +23,7 @@ const Portfolio = () => {
 
 
   return (
-    <div className='mt-16 container mx-auto py-10 font-[poppins]'>
+    <div id="portfolio" className='mt-16 container mx-auto py-10 font-[poppins]'>
         <div className='flex flex-col items-center gap-y-4'>
             <h2 className='uppercase text-gray-700 font-[600] text-lg md:text-xl'>Portfolio</h2>
             <p className='text-center text-cyan-700 uppercase text-xl md:text-4xl'>

@@ -5,7 +5,7 @@ import ServiceItem from './ServiceItem';
 
 const Services = () => {
   return (
-    <div className='bg-service bg-cover bg-no-repeat bg-center flex flex-col items-center container mx-auto py-16 mt-10 font-[poppins]'>
+    <div id="services" className='bg-service bg-cover bg-no-repeat bg-center flex flex-col items-center container mx-auto py-16 mt-10 font-[poppins]'>
         <div className='w-96 md:w-[80%] border-t-2 border-blue-700'></div>
         <div className='mt-10 h-32 border-r-2 border-blue-700'></div>
 
