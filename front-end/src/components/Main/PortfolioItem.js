@@ -7,6 +7,7 @@ const PortfolioItem = ({imgSrc, children}) => {
 
   return (
     <ReactCardFlip 
+      data-aos="flip-down"
       isFlipped={isFlipped} 
       flipDirection={'horizontal'}
       flipSpeedBackToFront={1}

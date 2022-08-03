@@ -11,7 +11,7 @@ const Hero = () => {
         className='container mx-auto flex flex-col gap-y-3 items-center md:flex-row md:gap-y-0 md:gap-x-5 md:justify-around md:items-center font-[poppins] bg-hero bg-no-repeat bg-cover bg-right md:bg-center bg-fixed py-10'>
 
         {/* Description Section */}
-        <div className='flex flex-col items-start gap-y-3 md:gap-y-4'>
+        <div data-aos="fade-up-right" className='flex flex-col items-start gap-y-3 md:gap-y-4'>
             <h2 className='text-sm md:text-base animate-bounce text-cyan-600'>Hey There !</h2>
             <h4 className='flex items-center gap-x-2 uppercase text-2xl md:text-4xl font-[600]'>
                 <p>I am</p>
@@ -31,7 +31,7 @@ const Hero = () => {
         </div>
 
         {/* Image Section */}
-        <div className='pt-8 md:pt-0 max-w-[230px] md:max-w-[400px]'>
+        <div data-aos="fade-up-left" className='pt-8 md:pt-0 max-w-[230px] md:max-w-[400px]'>
             <img 
                 src={OverwatchPhoto} 
                 alt="Overwatch Coder" 

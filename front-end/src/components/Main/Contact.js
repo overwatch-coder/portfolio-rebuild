@@ -36,7 +36,7 @@ const Contact = () => {
 
 
   return (
-    <div id="contact" className='relative bg-progress bg-no-repeat bg-fixed bg-center bg-cover container mx-auto py-10 font-[poppins]'>
+    <div data-aos="fade-up" id="contact" className='relative bg-progress bg-no-repeat bg-fixed bg-center bg-cover container mx-auto py-10 font-[poppins]'>
         <div className='px-2 md:px-3 flex flex-col gap-y-2'>
 
             <div className='text-center md:text-start flex flex-col gap-y-2'>
