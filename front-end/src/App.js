@@ -5,10 +5,10 @@ import UserRoutes from "./pages/UserRoutes";
 const App = () => {
   AOS.init({
     startEvent: 'DOMContentLoaded',
-    offset: 200,
+    offset: 50,
     duration: 1000,
     disable: false,
-    delay: 50,
+    delay: 250,
     once: false,
     mirror: true,
     easing: 'ease-in-out'
