@@ -33,14 +33,14 @@ const WebProjects = ({goToUrl}) => {
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl('https://github.com/overwatch-coder/portfolio-new')}
+                        onClick={() => goToUrl('https://overwatch-coder-portfolio.herokuapp.com/')}
                     >
                         View Live Project
                     </Link>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl("https://github.com/overwatch-coder/portfolio-new")}
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/portfolio-rebuild")}
                     >
                         View Source Code
                     </Link>
