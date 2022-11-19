@@ -7,31 +7,53 @@ const Contact = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const { REACT_APP_MAIL_API } = process.env;
+    const [loading, setLoading] = useState(false);
     const [messageSent, setMessageSent] = useState(false);
+    const { 
+        REACT_APP_MAIL_API,
+        REACT_APP_SERVICE_ID,
+        REACT_APP_TEMPLATE_ID,
+        REACT_APP_USER_ID 
+    } = process.env;
 
     const handleSubmission = (event) => {
         event.preventDefault();
-        const data = {
-            fullName,
-            email,
-            subject,
-            message
-        }
 
-        axios.post(`${REACT_APP_MAIL_API}/send`, data)
-        .then(data => {
+        const data = {
+            service_id: REACT_APP_SERVICE_ID,
+            template_id: REACT_APP_TEMPLATE_ID,
+            user_id: REACT_APP_USER_ID ,
+            template_params: {
+                fullName,
+                email,
+                subject,
+                message,
+                from_name: fullName
+            }
+        };
+
+        setLoading(true);
+        
+        axios.post(REACT_APP_MAIL_API, data, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(data => {            
             if(!data) {
                 setMessageSent(false);
                 throw Error('Could not send email')
             }
+
             setFullName('');
             setEmail('');
             setSubject('');
             setMessage('');
+            setLoading(false);
+
             setMessageSent(true);
         })
-        .catch(err => console.log(err.message))
+        .catch(err => console.log(err))
     }
 
 
@@ -46,7 +68,12 @@ const Contact = () => {
                 </h4>
             </div>
 
-            <div className='flex flex-col items-center gap-y-10'>
+            {loading && <div className='text-center text-4xl'>
+                <h2>Sending email....</h2>
+                <p className='text-2xl mt-3'>Please wait</p>
+            </div>}
+
+            {!loading && <div className='flex flex-col items-center gap-y-10'>
             {!messageSent && 
                 <form 
                     className='pt-5 flex flex-col gap-y-7 items-start w-full'
@@ -94,7 +121,7 @@ const Contact = () => {
                             required
                         ></textarea>
                     </div>
-                    <button type='submit' className='rounded text-lg uppercase px-4 py-4 hover:bg-blue-700 bg-blue-800 text-light w-full md:w-64'>send message</button>
+                    <button type='submit' className='rounded text-lg uppercase px-4 py-4 hover:bg-blue-700 bg-blue-800 text-light w-full md:w-64' disabled={loading}>send message</button>
                 </form>
                 }
 
@@ -128,7 +155,7 @@ const Contact = () => {
                         <span className='italic text-light/80'>(212) - 698-551516</span>
                     </p>
                 </div>
-            </div>
+            </div>}
         </div>
     </div>
   )

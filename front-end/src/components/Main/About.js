@@ -21,7 +21,7 @@ const About = () => {
                 <span className='tracking-wider'>UI/UX Designer</span>
             </h3>
             <p className='leading-loose text-center md:text-xl md:pt-5 md:leading-[2.3]'>
-                I am an <span className='italic text-cyan-500'>Electrical Engineering and Industrial Computing student</span>. <br />
+                I am a final year<span className='italic text-cyan-500'> Electronics and Optics for Embedded Systems Student</span>. <br />
                 I spend most of my free time learning to code. <br />
                 When not coding, I enjoy watching movies and series and listening to music. <br />
                 I am very determined and passionate about everything techie
@@ -32,7 +32,7 @@ const About = () => {
                 
                 target="_blank"
             >
-                Download Resume
+                Checkout My Resume
             </Link>
         </div>
     </div>

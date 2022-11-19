@@ -6,6 +6,7 @@ import qrcode from "../../assets/qrcode.png";
 import weatherApp from "../../assets/weather-app.png";
 import drwoy from "../../assets/drwoy.png";
 import PortfolioItem from './PortfolioItem';
+import mernBlog from "../../assets/mern-project.png";
 
 const WebProjects = ({goToUrl}) => {
   return (
@@ -72,7 +73,7 @@ const WebProjects = ({goToUrl}) => {
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl('https://qlikstudios.com')}
+                        onClick={() => goToUrl('https://qlikstudios.vercel.app/')}
                     >
                         View Live Project
                     </Link>
@@ -151,9 +152,52 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
 
+        <PortfolioItem imgSrc={mernBlog}>
+            <div>
+                <h3 className='text-2xl text-light font-[georgia]'>
+                    Full Stack MERN Blog Application
+                </h3>
+                <div className='text-sm flex flex-col items-center gap-y-1'>
+                    <h3 className='flex flex-col items-center gap-y-2'>
+                        <span>
+                            The frontend was created with React Js with Context API and Tailwind CSS.
+                            <br />
+                            Authentication was done with JWT.
+                        </span>
+                        <span>
+                            Backend is made with NodeJs and Express and storage with MongoDB
+                        </span>
+                    </h3>
+                    <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
+                        <span>Skillset: </span>
+                        <span>Tailwind CSS, </span>
+                        <span>React Js</span>
+                        <span>MongoDB</span>
+                        <span>Express JS</span>
+                    </h4>
+                </div>
+                <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl('https://mern-project-overwatch-coder.vercel.app/')}
+                    >
+                        View Live Project
+                    </Link>
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/mern_project")}
+                    >
+                        View Source Code
+                    </Link>
+                </div>
+            </div>
+        </PortfolioItem>
+
         <PortfolioItem imgSrc={drwoy}>
             <div>
-                <h3 className='text-2xl text-light font-[georgia]'>Music Website - Client</h3>
+                <h3 className='text-2xl text-light font-[georgia]'>Artist Music Website</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
                     <h3 className='flex flex-col items-center gap-y-2'>
                         <span>A Music Portfolio for an artist which shows the recent songs</span>

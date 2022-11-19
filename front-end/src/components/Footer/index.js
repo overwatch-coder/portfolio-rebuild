@@ -3,6 +3,7 @@ import { GoPrimitiveDot } from "react-icons/go";
 import { BsInstagram, BsTwitter, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Index = () => {
   const goToUrl = (url) => {
@@ -50,11 +51,11 @@ const Index = () => {
         <div className='text-start col-span-1 flex flex-col items-start gap-y-4'>
           <h2 className='uppercase text-cyan-300 border-yellow-600 border-b-2 text-lg md:text-2xl'>Go To</h2>
           <div className='flex flex-col gap-y-6'>
-            <Link to={'#'} className="hover:text-yellow-500 transition">Home</Link>
-            <Link to={'#'} className="hover:text-yellow-500 transition">About</Link>
-            <Link to={'#'} className="hover:text-yellow-500 transition">Services</Link>
-            <Link to={'#'} className="hover:text-yellow-500 transition">Portfolio</Link>
-            <Link to={'#'} className="hover:text-yellow-500 transition">Contact</Link>
+            <AnchorLink href='#home' className="hover:text-yellow-500 transition">Home</AnchorLink>
+            <AnchorLink href='#about' className="hover:text-yellow-500 transition">About</AnchorLink>
+            <AnchorLink href='#services' className="hover:text-yellow-500 transition">Services</AnchorLink>
+            <AnchorLink href='#portfolio' className="hover:text-yellow-500 transition">Portfolio</AnchorLink>
+            <AnchorLink href='#contact' className="hover:text-yellow-500 transition">Contact</AnchorLink>
           </div>
         </div>
 
@@ -62,9 +63,9 @@ const Index = () => {
         <div className='text-start col-span-1 flex flex-col items-start gap-y-4'>
           <h2 className='uppercase text-cyan-300 border-yellow-600 border-b-2 text-lg md:text-2xl'>Services</h2>
           <div className='flex flex-col gap-y-6'>
-            <Link to={'#'} className="hover:text-yellow-500 transition">Web Development</Link>
-            <Link to={'#'} className="hover:text-yellow-500 transition">UI/UX Design</Link>
-            <Link to={'#'} className="hover:text-yellow-500 transition">Search Engine Optimization</Link>
+            <AnchorLink href='#services' className="hover:text-yellow-500 transition">Web Development</AnchorLink>
+            <AnchorLink href='#services' className="hover:text-yellow-500 transition">UI/UX Design</AnchorLink>
+            <AnchorLink href='#services' className="hover:text-yellow-500 transition">Search Engine Optimization</AnchorLink>
           </div>
         </div>
       </div>
