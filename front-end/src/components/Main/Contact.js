@@ -10,7 +10,6 @@ const Contact = () => {
     const [loading, setLoading] = useState(false);
     const [messageSent, setMessageSent] = useState(false);
     const { 
-        REACT_APP_MAIL_API,
         REACT_APP_SERVICE_ID,
         REACT_APP_TEMPLATE_ID,
         REACT_APP_USER_ID 
@@ -34,11 +33,7 @@ const Contact = () => {
 
         setLoading(true);
         
-        axios.post(REACT_APP_MAIL_API, data, {
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
+        axios.post('https://api.emailjs.com/api/v1.0/email/send', data)
         .then(data => {            
             if(!data) {
                 setMessageSent(false);

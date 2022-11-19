@@ -20,7 +20,7 @@ const About = () => {
                 <span className='leading-loose tracking-wider'>Front-End React Developer</span>
                 <span className='tracking-wider'>UI/UX Designer</span>
             </h3>
-            <p className='leading-loose text-center md:text-xl md:pt-5 md:leading-[2.3]'>
+            <p className='leading-loose text-start md:text-xl md:pt-5 md:leading-[2.3]'>
                 I am a final year<span className='italic text-cyan-500'> Electronics and Optics for Embedded Systems Student</span>. <br />
                 I spend most of my free time learning to code. <br />
                 When not coding, I enjoy watching movies and series and listening to music. <br />
