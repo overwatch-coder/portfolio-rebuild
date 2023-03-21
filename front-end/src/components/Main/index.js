@@ -9,7 +9,7 @@ import TechStack from './TechStack'
 
 const Index = () => {
   return (
-    <section className='overflow-hidden py-10 md:py-16 transition-all'>
+    <section className='overflow-x-hidden py-10 md:py-16 transition-all'>
       <Hero />
       <TechStack />
       <About />

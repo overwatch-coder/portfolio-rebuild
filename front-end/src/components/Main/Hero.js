@@ -7,7 +7,7 @@ const Hero = () => {
 
   return (
     <div id="home"
-        className='container mx-auto flex flex-col gap-y-3 items-center md:flex-row md:gap-y-0 md:gap-x-5 md:justify-around md:items-center font-[poppins] bg-hero bg-no-repeat bg-cover bg-right md:bg-center bg-fixed py-10'>
+        className='overflow-x-hidden container mx-auto flex flex-col gap-y-3 items-center md:flex-row md:gap-y-0 md:gap-x-5 md:justify-around md:items-center font-[poppins] bg-hero bg-no-repeat bg-cover bg-right md:bg-center bg-fixed py-10'>
 
         {/* Description Section */}
         <div data-aos="fade-up-right" className='flex flex-col items-start gap-y-3 md:gap-y-4'>

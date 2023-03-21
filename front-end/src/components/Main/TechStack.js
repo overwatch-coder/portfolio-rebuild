@@ -2,7 +2,7 @@ import { SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiMongodb, SiReact, SiNex
 
 const TechStack = () => {
   return (
-    <div className='mt-16 container mx-auto py-10 font-[poppins] flex flex-col gap-y-3 items-center' data-aos="slide-up">
+    <div className='overflow-x-hidden mt-16 container py-10 font-[poppins] flex flex-col gap-y-3 items-center' data-aos="slide-up">
         <h2 className="uppercase font-bold text-xl font-[georgia] py-5 text-cyan-600">
             Tech Stack
         </h2>
