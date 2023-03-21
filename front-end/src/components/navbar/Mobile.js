@@ -4,7 +4,7 @@ import NavItems from './NavItems';
 import NavLogo from './NavLogo';
 
 const Mobile = () => {
-    const [showNavClass, setShowNavClass] = useState('translate-x-[1000px] absolute top-[68px]');
+    const [showNavClass, setShowNavClass] = useState('translate-x-[-99%] absolute');
     const [showCloseButton, setShowCloseButton] = useState(false);
 
     const showNavMenu = () => {
@@ -13,7 +13,7 @@ const Mobile = () => {
     }
 
     const hideNavMenu =  () => {
-        setShowNavClass('translate-x-[1000px] absolute top-[68px]');
+        setShowNavClass('translate-x-[-99%] absolute');
         setShowCloseButton(!showCloseButton);
     }
 

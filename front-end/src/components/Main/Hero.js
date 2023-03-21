@@ -24,8 +24,8 @@ const Hero = () => {
             </h4>
             <p className='text-gray-700 font-light md:text-lg'>React Developer | MERN Stack</p>
             <p className='flex items-center gap-x-4'>
-                <AnchorLink href='#portfolio' className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>See my Work</AnchorLink>
-                <AnchorLink href='#contact' className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>Hire Me</AnchorLink>
+                <AnchorLink href='#portfolio' className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded-full py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>See my Work</AnchorLink>
+                <AnchorLink href='#contact' className='text-sm md:text-lg transition uppercase border-2 border-cyan-700 rounded-full py-2 px-4 cursor-pointer hover:border-none hover:bg-cyan-600 hover:text-light'>Hire Me</AnchorLink>
             </p>
         </div>
 
