@@ -9,6 +9,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
     const [messageSent, setMessageSent] = useState(false);
+
     const { 
         REACT_APP_SERVICE_ID,
         REACT_APP_TEMPLATE_ID,
@@ -132,22 +133,22 @@ const Contact = () => {
                     </div>
                 }
 
-                <div className='py-5 text-center flex flex-col items-center md:gap-y-0 md:flex-row md:justify-center md:items-center w-full'>
-                    <p className='py-7 bg-cyan-700 text-light w-full flex flex-col items-center gap-y-3'>
-                        <span className='text-xl uppercase'>Address</span>
-                        <span className='italic text-light/80'>04 Rue Oued Nfiss Ancien Mellah</span>
+                <div className='py-5 text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full bg-cyan-700 divide-y-4 md:divide-x-4 md:divide-y-0'>
+                    <p className='p-3 text-light w-full flex flex-col items-center gap-y-3'>
+                        <span className='lg:text-xl uppercase'>Address</span>
+                        <span className='text-sm italic text-light/80'>Lot Jacques Philipes No.18 <br /> Salé Tabriquet</span>
                     </p>
-                    <p className='py-7 bg-blue-700 text-light w-full flex flex-col items-center gap-y-3'>
-                        <span className='text-xl uppercase'>Postal Code - City</span>
-                        <span className='italic text-light/80'>11000 - Salé, Morocco</span>
+                    <p className='p-3 text-light w-full flex flex-col items-center gap-y-3'>
+                        <span className='lg:text-xl uppercase'>Postal Code - City</span>
+                        <span className='text-sm italic text-light/80'>11000 - Salé, Morocco</span>
                     </p>
-                    <p className='py-7 bg-yellow-700 text-light w-full flex flex-col items-center gap-y-3'>
-                        <span className='text-xl uppercase'>Email Address</span>
-                        <span className='italic text-light/80'>devbrainy98@gmail.com</span>
+                    <p className='p-3 text-light w-full flex flex-col items-center gap-y-3'>
+                        <span className='lg:text-xl uppercase'>Email Address</span>
+                        <span className='text-sm italic text-light/80'>devbrainy98@gmail.com</span>
                     </p>
-                    <p className='py-7 bg-black text-light w-full flex flex-col items-center gap-y-3'>
-                        <span className='text-xl uppercase'>Phone Number</span>
-                        <span className='italic text-light/80'>(212) - 698-551516</span>
+                    <p className='p-3 text-light w-full flex flex-col items-center gap-y-3'>
+                        <span className='lg:text-xl uppercase'>Phone Number</span>
+                        <span className='text-sm italic text-light/80'>(212)-0698-551516</span>
                     </p>
                 </div>
             </div>}

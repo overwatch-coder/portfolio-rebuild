@@ -17,7 +17,7 @@ const Index = () => {
       {/* Column 1 */}
         <div className='md:px-20 flex flex-col gap-y-5 col-span-1 md:col-span-2'>
           <h3 className='flex items-end gap-x-1 text-cyan-300 font-[georgia]'>
-            <span className='uppercase tracking-wider text-4xl md:text-5xl'>Overwatch</span>
+            <span className='uppercase tracking-wider text-4xl md:text-3xl lg:text-5xl'>Overwatch</span>
             <GoPrimitiveDot className='text-2xl' />
           </h3>
           <div className='pt-3 flex flex-col items-start gap-y-3'>

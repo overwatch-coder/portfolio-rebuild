@@ -5,12 +5,37 @@ import UiDrwoy from "../../assets/UI_drwoy.png";
 import UiPortfolio from "../../assets/UI_Portfolio.png";
 import UiETL from "../../assets/UI_ETL.png";
 import UiNelia from "../../assets/UI_Nelia.png";
+import UiMetakay from "../../assets/metakay_design.png";
 import { Link } from 'react-router-dom';
 
 const UiProjects = ({goToUrl}) => {
   return (
     <div className='relative mt-10 px-2 gap-y-7 md:gap-x-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
     >
+      <PortfolioItem imgSrc={UiMetakay}>
+          <div>
+              <h3 className='text-2xl text-light font-[georgia]'>Fashion Website (Metakay) UI Design</h3>
+              <div className='text-sm flex flex-col items-center gap-y-1'>
+                  <h3 className='pt-2 flex flex-col items-center gap-y-2'>
+                      <span>The UI design for Metakay's website</span>
+                  </h3>
+                  <h4 className='pt-2 text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
+                      <span>Skillset: </span>
+                      <span>Figma</span>
+                  </h4>
+              </div>
+              <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
+                  <Link 
+                      to={'#'} 
+                      className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                      onClick={() => goToUrl('https://www.figma.com/proto/FrnhAycbeXDzsn4fKXklGa/MetaKay?scaling=min-zoom&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2&show-proto-sidebar=1')}
+                  >
+                      View Live Design
+                  </Link>
+              </div>
+          </div>
+      </PortfolioItem>
+
       <PortfolioItem imgSrc={UiQlikStudios}>
           <div>
               <h3 className='text-2xl text-light font-[georgia]'>Photography Website UI Design</h3>

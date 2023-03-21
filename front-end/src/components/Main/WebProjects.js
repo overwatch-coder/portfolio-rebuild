@@ -7,41 +7,78 @@ import weatherApp from "../../assets/weather-app.png";
 import drwoy from "../../assets/drwoy.png";
 import PortfolioItem from './PortfolioItem';
 import mernBlog from "../../assets/mern-project.png";
+import metakay from "../../assets/metakay.png";
 
 const WebProjects = ({goToUrl}) => {
   return (
     <div className='relative mt-10 px-2 gap-y-7 md:gap-x-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
     >
-        <PortfolioItem imgSrc={overwatchPortfolio}>
+        <PortfolioItem imgSrc={metakay}>
             <div>
-                <h3 className='text-2xl text-light font-[georgia]'>Portfolio Website</h3>
+                <h3 className='text-2xl text-light font-[georgia]'>Fashion Design Website - Metakay</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
                     <h3 className='flex flex-col items-center gap-y-2'>
-                        <span>This project is the current Website you are on.</span>
+                        <span>This is a fashion design website for a brand called Metakay</span>
                         <span>
-                            This Project was made to showcase the projects I've worked on.
+                            Integrated into the website include the brand's portfolio, shopping space, cart system and taking orders
                         </span>
                     </h3>
                     <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
                         <span>Skillset: </span>
                         <span>React Js,</span>
                         <span>Tailwind CSS,</span>
-                        <span>Node JS,</span>
-                        <span>Express JS</span>
+                        <span>HTML</span>
+                        <span>Context API</span>
                     </h4>
                 </div>
                 <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl('https://overwatch-coder-portfolio.herokuapp.com/')}
+                        onClick={() => goToUrl('https://metakay.vercel.app/')}
                     >
                         View Live Project
                     </Link>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl("https://github.com/overwatch-coder/portfolio-rebuild")}
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/metakay")}
+                    >
+                        View Source Code
+                    </Link>
+                </div>
+            </div>
+        </PortfolioItem>
+
+        <PortfolioItem imgSrc={drwoy}>
+            <div>
+                <h3 className='text-2xl text-light font-[georgia]'>Artist Music Website</h3>
+                <div className='text-sm flex flex-col items-center gap-y-1'>
+                    <h3 className='flex flex-col items-center gap-y-2'>
+                        <span>A Music Portfolio for an artist which shows the recent songs</span>
+                        <span>
+                            Also, users can find merch, subscribe to newsletters as well as find social media details.
+                        </span>
+                    </h3>
+                    <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
+                        <span>Skillset: </span>
+                        <span>Tailwind CSS,</span>
+                        <span>HTML & CSS,</span>
+                        <span>JavaScript</span>
+                    </h4>
+                </div>
+                <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl('https://drwoy.vercel.app/')}
+                    >
+                        View Live Project
+                    </Link>
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/drwoy-website")}
                     >
                         View Source Code
                     </Link>
@@ -77,74 +114,11 @@ const WebProjects = ({goToUrl}) => {
                     >
                         View Live Project
                     </Link>
-                </div>
-            </div>
-        </PortfolioItem>
 
-        <PortfolioItem imgSrc={weatherApp}>
-            <div>
-                <h3 className='text-2xl text-light font-[georgia]'>Weather App</h3>
-                <div className='text-sm flex flex-col items-center gap-y-1'>
-                    <h3 className='flex flex-col items-center gap-y-2'>
-                        <span>A Simple Weather App In React JS</span>
-                        <span>
-                            You can search for the details of any city at all in the world easily
-                            as well as save viewed cities to local storage
-                        </span>
-                    </h3>
-                    <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
-                        <span>Skillset: </span>
-                        <span>React Js,</span>
-                        <span>Tailwind CSS</span>
-                    </h4>
-                </div>
-                <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl('https://overwatch-coder.github.io/weather-app/')}
-                    >
-                        View Live Project
-                    </Link>
-                    <Link 
-                        to={'#'} 
-                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl("https://github.com/overwatch-coder/weather-app")}
-                    >
-                        View Source Code
-                    </Link>
-                </div>
-            </div>
-        </PortfolioItem>
-
-        <PortfolioItem imgSrc={qrcode}>
-            <div>
-                <h3 className='text-2xl text-light font-[georgia]'>QR Code Generator</h3>
-                <div className='text-sm flex flex-col items-center gap-y-1'>
-                    <h3 className='flex flex-col items-center gap-y-2'>
-                        <span>A Simple QR Code Generator made in React JS</span>
-                        <span>
-                            You can encode any url, simple text or contact details in the form of url as well as download it and share
-                        </span>
-                    </h3>
-                    <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
-                        <span>Skillset: </span>
-                        <span>React Js,</span>
-                        <span>Tailwind CSS</span>
-                    </h4>
-                </div>
-                <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
-                    <Link 
-                        to={'#'} 
-                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl('https://overwatch-coder.github.io/qrcode-generator/')}
-                    >
-                        View Live Project
-                    </Link>
-                    <Link 
-                        to={'#'} 
-                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl("https://github.com/overwatch-coder/qrcode-generator")}
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/qlikstudios")}
                     >
                         View Source Code
                     </Link>
@@ -195,35 +169,107 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
 
-        <PortfolioItem imgSrc={drwoy}>
+        <PortfolioItem imgSrc={weatherApp}>
             <div>
-                <h3 className='text-2xl text-light font-[georgia]'>Artist Music Website</h3>
+                <h3 className='text-2xl text-light font-[georgia]'>Weather App</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
                     <h3 className='flex flex-col items-center gap-y-2'>
-                        <span>A Music Portfolio for an artist which shows the recent songs</span>
+                        <span>A Simple Weather App In React JS</span>
                         <span>
-                            Also, users can find merch, subscribe to newsletters as well as find social media details.
+                            You can search for the details of any city at all in the world easilyas well as save viewed cities to local storage
                         </span>
                     </h3>
                     <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
                         <span>Skillset: </span>
-                        <span>Tailwind CSS,</span>
-                        <span>HTML & CSS,</span>
-                        <span>JavaScript</span>
+                        <span>React Js,</span>
+                        <span>Tailwind CSS</span>
                     </h4>
                 </div>
                 <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl('https://overwatch-coder.github.io/drwoy-website/')}
+                        onClick={() => goToUrl('https://overwatch-coder.github.io/weather-app/')}
+                    >
+                        View Live Project
+                    </Link>
+
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/weather-app")}
+                    >
+                        View Source Code
+                    </Link>
+                </div>
+            </div>
+        </PortfolioItem>
+                
+        <PortfolioItem imgSrc={overwatchPortfolio}>
+            <div>
+                <h3 className='text-2xl text-light font-[georgia]'>Portfolio Website</h3>
+                <div className='text-sm flex flex-col items-center gap-y-1'>
+                    <h3 className='flex flex-col items-center gap-y-2'>
+                        <span>This project is the current Website you are on.</span>
+                        <span>
+                            This Project was made to showcase the projects I've worked on.
+                        </span>
+                    </h3>
+                    <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
+                        <span>Skillset: </span>
+                        <span>React Js,</span>
+                        <span>Tailwind CSS,</span>
+                        <span>Node JS,</span>
+                        <span>Express JS</span>
+                    </h4>
+                </div>
+                <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl('https://overwatch-coder.vercel.app/')}
                     >
                         View Live Project
                     </Link>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl("https://github.com/overwatch-coder/drwoy-website")}
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/portfolio-rebuild")}
+                    >
+                        View Source Code
+                    </Link>
+                </div>
+            </div>
+        </PortfolioItem>
+
+        <PortfolioItem imgSrc={qrcode}>
+            <div>
+                <h3 className='text-2xl text-light font-[georgia]'>QR Code Generator</h3>
+                <div className='text-sm flex flex-col items-center gap-y-1'>
+                    <h3 className='flex flex-col items-center gap-y-2'>
+                        <span>A Simple QR Code Generator made in React JS</span>
+                        <span>
+                            You can encode any url, simple text or contact details in the form of url as well as download it and share
+                        </span>
+                    </h3>
+                    <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
+                        <span>Skillset: </span>
+                        <span>React Js,</span>
+                        <span>Tailwind CSS</span>
+                    </h4>
+                </div>
+                <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl('https://overwatch-coder.github.io/qrcode-generator/')}
+                    >
+                        View Live Project
+                    </Link>
+                    <Link 
+                        to={'#'} 
+                        className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/qrcode-generator")}
                     >
                         View Source Code
                     </Link>

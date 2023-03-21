@@ -17,14 +17,14 @@ const PortfolioItem = ({imgSrc, children}) => {
       <img 
         src={imgSrc} 
         alt="Project Type" 
-        onMouseEnter={() => setIsFlipped(!isFlipped)} 
+        onMouseEnter={() => setIsFlipped(prev => !prev)} 
         onMouseLeave={() => setIsFlipped(isFlipped)} 
         className="cursor-pointer"
       />
 
       <div  
         onMouseEnter={() => setIsFlipped(isFlipped)}
-        onMouseLeave={() => setIsFlipped(!isFlipped)}
+        onMouseLeave={() => setIsFlipped(prev => !prev)}
         className="flex justify-center items-center p-3 text-center cursor-pointer h-full w-full bg-cyan-600"
       >
         {children}

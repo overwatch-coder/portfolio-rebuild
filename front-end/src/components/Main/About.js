@@ -1,7 +1,7 @@
 import React from 'react';
 import OverwatchImage from "../../assets/brainy.jpg";
 import { Link } from "react-router-dom";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/00.atsu_nyamadi_eng.pdf";
 
 const About = () => {
   return (
