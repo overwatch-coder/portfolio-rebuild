@@ -2,16 +2,16 @@ import React from 'react';
 import { useState } from 'react';
 import ReactCardFlip from "react-card-flip";
 
-const PortfolioItem = ({imgSrc, children}) => {
+const PortfolioItem = ({imgSrc, children, name}) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
     <ReactCardFlip 
       data-aos="flip-down"
       isFlipped={isFlipped} 
-      flipDirection={'horizontal'}
-      flipSpeedBackToFront={1}
-      flipSpeedFrontToBack={1} 
+      flipDirection={'vertical'}
+      flipSpeedBackToFront={1.3}
+      flipSpeedFrontToBack={1.3} 
       containerClassName="relative col-span-1 font-[poppins] shadow-2xl drop-shadow-2xl"
     >
       <img 
@@ -19,7 +19,7 @@ const PortfolioItem = ({imgSrc, children}) => {
         alt="Project Type" 
         onMouseEnter={() => setIsFlipped(prev => !prev)} 
         onMouseLeave={() => setIsFlipped(isFlipped)} 
-        className="cursor-pointer"
+        className="cursor-pointer w-full h-full object-cover"
       />
 
       <div  

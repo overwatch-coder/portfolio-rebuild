@@ -13,7 +13,7 @@ const WebProjects = ({goToUrl}) => {
   return (
     <div className='relative mt-10 px-2 gap-y-7 md:gap-x-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'
     >
-        <PortfolioItem imgSrc={metakay}>
+        <PortfolioItem imgSrc={metakay} name={"metakay"}>
             <div>
                 <h3 className='text-2xl text-light font-[georgia]'>Fashion Design Website - Metakay</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
@@ -50,7 +50,7 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
 
-        <PortfolioItem imgSrc={drwoy}>
+        <PortfolioItem imgSrc={drwoy} name={"drwoy"}>
             <div>
                 <h3 className='text-2xl text-light font-[georgia]'>Artist Music Website</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
@@ -63,22 +63,21 @@ const WebProjects = ({goToUrl}) => {
                     <h4 className='text-center flex items-center gap-x-1 italic text-yellow-500 flex-wrap'>
                         <span>Skillset: </span>
                         <span>Tailwind CSS,</span>
-                        <span>HTML & CSS,</span>
-                        <span>JavaScript</span>
+                        <span>React Js</span>
                     </h4>
                 </div>
                 <div className='pt-3 flex items-center justify-center gap-x-3 uppercase'>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl('https://drwoy.vercel.app/')}
+                        onClick={() => goToUrl('https://www.drwoy.com/')}
                     >
                         View Live Project
                     </Link>
                     <Link 
                         to={'#'} 
                         className='text-sm transition px-2 py-2 text-dark bg-light hover:bg-dark hover:text-light'
-                        onClick={() => goToUrl("https://github.com/overwatch-coder/drwoy-website")}
+                        onClick={() => goToUrl("https://github.com/overwatch-coder/drwoy")}
                     >
                         View Source Code
                     </Link>
@@ -86,7 +85,7 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
 
-        <PortfolioItem imgSrc={qlikStudio}>
+        <PortfolioItem imgSrc={qlikStudio} name={"qlikstudios"}>
             <div>
                 <h3 className='text-2xl text-light font-[georgia]'>Qlik Studios Website - Client</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
@@ -126,7 +125,7 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
 
-        <PortfolioItem imgSrc={mernBlog}>
+        <PortfolioItem imgSrc={mernBlog} name={"mern"}>
             <div>
                 <h3 className='text-2xl text-light font-[georgia]'>
                     Full Stack MERN Blog Application
@@ -169,7 +168,7 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
 
-        <PortfolioItem imgSrc={weatherApp}>
+        <PortfolioItem imgSrc={weatherApp} name={"weather"}>
             <div>
                 <h3 className='text-2xl text-light font-[georgia]'>Weather App</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
@@ -205,7 +204,7 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
                 
-        <PortfolioItem imgSrc={overwatchPortfolio}>
+        <PortfolioItem imgSrc={overwatchPortfolio} name={"portfolio"}>
             <div>
                 <h3 className='text-2xl text-light font-[georgia]'>Portfolio Website</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
@@ -242,7 +241,7 @@ const WebProjects = ({goToUrl}) => {
             </div>
         </PortfolioItem>
 
-        <PortfolioItem imgSrc={qrcode}>
+        <PortfolioItem imgSrc={qrcode} name={"qrcode"}>
             <div>
                 <h3 className='text-2xl text-light font-[georgia]'>QR Code Generator</h3>
                 <div className='text-sm flex flex-col items-center gap-y-1'>
